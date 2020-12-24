@@ -1,23 +1,19 @@
 /*
     Glory to God in the highest
     =============================
-
-    extension to search internet in VSCode.
 */
 
 const path = require('path');
 const fs = require('fs');
 const readline = require('readline-sync');
 
-const chantsdir='d:/песнопения/несмотренное'
-const livesdir='d:/документы/Жития святых'
-const patristicdir='d:/документы/Творения святых отцов'
+const chantsdir='...'
+const livesdir='...'
+const patristicdir='...'
 
 const directoryPath = livesdir // chantsdir;
 var nameWords={},  files=[], dirs=[]
 
-//проверка всех пдф. убрать пустые пдф размером 127 кб. скрытые файлы с точкой.
-//avoid too long file names. check and shorten.
 
 checkdir(directoryPath)
 
